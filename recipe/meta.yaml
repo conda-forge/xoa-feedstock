@@ -25,9 +25,9 @@ requirements:
     - appdirs
     - cmocean
     - configobj
+    - gsw
     - netcdf4
     - numba
-    - pytest
     - python >=3.7
     - scipy
     - setuptools >=40.4

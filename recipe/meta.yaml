@@ -47,7 +47,7 @@ test:
     - pytest
 
 about:
-  home: https://github.com/vacumm/xoa
+  home: https://github.com/shom-fr/xoa
   summary: xarray-based ocean analysis library
   license: Apache-2.0
   license_file: LICENSE
@@ -55,7 +55,7 @@ about:
     xoa is intended to help reading and manipulating observed and
     simulated ocean data. It is heavily based on xarray.
   doc_url: https://xoa.readthedocs.io/
-  dev_url: https://github.com/vacumm/xoa
+  dev_url: https://github.com/shom-fr/xoa
 
 extra:
   recipe-maintainers:

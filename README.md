@@ -3,13 +3,13 @@ About xoa-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/xoa-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/vacumm/xoa
+Home: https://github.com/shom-fr/xoa
 
 Package license: Apache-2.0
 
 Summary: xarray-based ocean analysis library
 
-Development: https://github.com/vacumm/xoa
+Development: https://github.com/shom-fr/xoa
 
 Documentation: https://xoa.readthedocs.io/
 

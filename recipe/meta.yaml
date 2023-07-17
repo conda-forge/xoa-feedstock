@@ -1,5 +1,5 @@
 {% set name = "xoa" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
-  sha256: d9c4c2fe595bd6f3fe57aaedad39efee3f960ad1818795066805e5cc7b0079db
+  sha256: 275c3941bc8779fe3c209891b968f0ce13158f0df5d1970b370f3364926174d3
 
 build:
   number: 0
@@ -47,7 +47,7 @@ test:
     - pytest
 
 about:
-  home: https://github.com/vacumm/xoa
+  home: https://github.com/shom-fr/xoa
   summary: xarray-based ocean analysis library
   license: Apache-2.0
   license_file: LICENSE
@@ -55,7 +55,7 @@ about:
     xoa is intended to help reading and manipulating observed and
     simulated ocean data. It is heavily based on xarray.
   doc_url: https://xoa.readthedocs.io/
-  dev_url: https://github.com/vacumm/xoa
+  dev_url: https://github.com/shom-fr/xoa
 
 extra:
   recipe-maintainers:

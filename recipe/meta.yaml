@@ -1,5 +1,5 @@
 {% set name = "xoa" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
-  sha256: 275c3941bc8779fe3c209891b968f0ce13158f0df5d1970b370f3364926174d3
+  sha256: 755d7913bd3730893f464d2e1d27ec46cd8970c36a71fa00bb9bfb079c2372d3
 
 build:
   number: 0
@@ -60,3 +60,4 @@ about:
 extra:
   recipe-maintainers:
     - stefraynaud
+    - mmorvan

@@ -7,18 +7,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
   sha256: 755d7913bd3730893f464d2e1d27ec46cd8970c36a71fa00bb9bfb079c2372d3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools >=40.4
     - setuptools-scm
   run:
@@ -28,7 +28,7 @@ requirements:
     - gsw
     - netcdf4
     - numba
-    - python >=3.7
+    - python >={{ python_min }}
     - scipy
     - setuptools >=40.4
     - xarray
@@ -45,6 +45,7 @@ test:
   requires:
     - pip
     - pytest
+    - python {{ python_min }}
 
 about:
   home: https://github.com/shom-fr/xoa

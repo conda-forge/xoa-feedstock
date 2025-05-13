@@ -1,5 +1,6 @@
 {% set name = "xoa" %}
 {% set version = "0.8.0" %}
+{% set python_min = "3.10.*" %}
 
 
 package:
@@ -19,10 +20,10 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools >=40.4
-    - setuptools-scm
+    - setuptools >=64
+    - setuptools-scm[toml] >= 8
   run:
-    - appdirs
+    - platformdirs
     - cmocean
     - configobj
     - gsw
@@ -30,7 +31,7 @@ requirements:
     - numba
     - python >={{ python_min }}
     - scipy
-    - setuptools >=40.4
+    - setuptools >=64
     - xarray
 
 test:

@@ -1,5 +1,6 @@
 {% set name = "xoa" %}
-{% set version = "0.7.1" %}
+{% set version = "0.8.0" %}
+{% set python_min = "3.10.*" %}
 
 
 package:
@@ -8,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
-  sha256: 755d7913bd3730893f464d2e1d27ec46cd8970c36a71fa00bb9bfb079c2372d3
+  sha256: c6b1b1cc2731f98d7f17539aa3a58755d1f6842ad9372495d2e6a79aa8e583db
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,10 +20,9 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools >=40.4
-    - setuptools-scm
+    - setuptools >=64
   run:
-    - appdirs
+    - platformdirs
     - cmocean
     - configobj
     - gsw
@@ -30,7 +30,7 @@ requirements:
     - numba
     - python >={{ python_min }}
     - scipy
-    - setuptools >=40.4
+    - setuptools >=64
     - xarray
 
 test:

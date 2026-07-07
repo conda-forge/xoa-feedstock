@@ -1,5 +1,5 @@
 {% set name = "xoa" %}
-{% set version = "2026.2.0" %}
+{% set version = "2026.7.0" %}
 {% set python_min = "3.10.*" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
-  sha256: 5521f41ba43f99eaa61bd5747546d47b08725ae12102fedb15373de3a0af0100
+  sha256: 92063f1943495fb1c796cff2f91c3bda373af941399dd5666f2fb778d044d61f
 
 build:
   number: 0

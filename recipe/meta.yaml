@@ -1,5 +1,5 @@
 {% set name = "xoa" %}
-{% set version = "2026.7.0" %}
+{% set version = "2026.10.0" %}
 {% set python_min = "3.10.*" %}
 
 
@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
-  sha256: 92063f1943495fb1c796cff2f91c3bda373af941399dd5666f2fb778d044d61f
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
+  sha256: ee875d8b99d093f5f2d1c664656484cc851d1f201e43276932d3bebe6cf86d58
 
 build:
   number: 0
@@ -21,18 +21,21 @@ requirements:
     - pip
     - python {{ python_min }}
     - setuptools >=64
+    - setuptools-scm >=8
   run:
-    - platformdirs
+    - cartopy
     - cmocean
     - configobj
+    - dask-core
     - gsw
+    - matplotlib-base
     - netcdf4
     - numba
+    - platformdirs
     - pooch
     - python >={{ python_min }}
     - scipy
-    - setuptools >=64
-    - xarray
+    - xarray >=2024.6
 
 test:
   source_files:

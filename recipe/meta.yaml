@@ -1,5 +1,5 @@
 {% set name = "xoa" %}
-{% set version = "2026.10.0" %}
+{% set version = "2026.11.0" %}
 {% set python_min = "3.10.*" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/xoa-{{ version }}.tar.gz
-  sha256: ee875d8b99d093f5f2d1c664656484cc851d1f201e43276932d3bebe6cf86d58
+  sha256: 2e5e0722c04f6605973951f7c7d5bd66a4b363a147bcdd66a08f421cbbaf39f3
 
 build:
   number: 0

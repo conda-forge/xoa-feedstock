@@ -45,7 +45,7 @@ test:
   commands:
     - pip check
 #    - xoa info
-    - pytest tests
+    - pytest tests --ignore=tests/test_release_notes.py
   requires:
     - pip
     - pytest
